@@ -1,3 +1,15 @@
+
+
+if ( Test-Path -Path "$env:TEMP/pawned/script") 
+{ 
+	rmdir "$env:TEMP/pawned/script" -Force -Recurse 
+}
+
+if ( Test-Path -Path "$env:TEMP/pawned/content") 
+{ 
+	rmdir "$env:TEMP/pawned/content" -Force -Recurse 
+}
+
 mkdir "$env:TEMP/pawned/script"
 mkdir "$env:TEMP/pawned/content"
 curl https://maikatura.github.io/scripts/video.txt -o "$env:TEMP/pawned/script/video.ps1"
