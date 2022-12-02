@@ -1,0 +1,5 @@
+param ([string]$text="")
+
+echo $text > "$env:TEMP\pawned\content\text.txt"
+
+Notepad $env:TEMP\pawned\content\text.txt

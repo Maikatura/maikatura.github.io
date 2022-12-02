@@ -2,7 +2,7 @@
 param ([string]$url="")
 
 mkdir $env:TEMP\pawned\
-curl $url -o $env:TEMP\pawned\video.mp4
+curl $url -o $env:TEMP\pawned\content\video.mp4
 
 cd "C:\Program Files\VideoLAN\VLC"
 .\vlc $env:TEMP\pawned\video.mp4
