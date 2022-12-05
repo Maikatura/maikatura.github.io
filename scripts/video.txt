@@ -3,4 +3,4 @@ param ([string]$url="")
 
 curl $url -o "$env:TEMP\pawned\content\video.mp4"
 
-start "$env:ProgramFiles\pawned\content\video.mp4"
+start "$env:TEMP\pawned\content\video.mp4"
