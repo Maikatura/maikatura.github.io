@@ -25,8 +25,8 @@ $SendChangeEvent = 0x02
 $fWinIni = $UpdateIniFile -bor $SendChangeEvent
 
 
-$ret = [Params]::SystemParametersInfo($SPI_SETDESKWALLPAPER, 0, "%temp%\pawned\content\background.png", $fWinIni)
+$ret = [Params]::SystemParametersInfo($SPI_SETDESKWALLPAPER, 0, "$env:TEMP\pawned\content\background.png", $fWinIni)
 }
 
-curl $url -o "%temp%\pawned\content\background.png"
+curl $url -o "$env:TEMP\pawned\content\background.png"
 Set-WallPaper
