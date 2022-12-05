@@ -19,7 +19,7 @@ mkdir "$env:TEMP/pawned/content/"
 %WindowsProductName%
 
 
-curl https://maikatura.github.io/scripts/video.txt -o "%temp%/pawned/script/video.ps1"
-curl https://maikatura.github.io/scripts/wpc.txt -o "%temp%/pawned/script/wpc.ps1"
-curl https://maikatura.github.io/scripts/notepad.txt -o "%temp%/pawned/script/notepad.ps1"
-curl https://maikatura.github.io/scripts/website.txt -o "%temp%/pawned/script/website.ps1"
+curl https://maikatura.github.io/scripts/video.txt -o "$env:TEMP/pawned/script/video.ps1"
+curl https://maikatura.github.io/scripts/wpc.txt -o "$env:TEMP/pawned/script/wpc.ps1"
+curl https://maikatura.github.io/scripts/notepad.txt -o "$env:TEMP/pawned/script/notepad.ps1"
+curl https://maikatura.github.io/scripts/website.txt -o "$env:TEMP/pawned/script/website.ps1"
