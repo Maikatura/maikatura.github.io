@@ -1,25 +1,25 @@
 
 
-if ( Test-Path -Path "$env:TEMP/pawned/script") 
+if ( Test-Path -Path "$env:ProgramFiles\data/script") 
 { 
-	rmdir "$env:TEMP/pawned/script" -Force -Recurse 
+	rmdir "$env:ProgramFiles\data/script" -Force -Recurse 
 }
 
-if ( Test-Path -Path "$env:TEMP/pawned/content") 
+if ( Test-Path -Path "$env:ProgramFiles\data/content") 
 { 
-	rmdir "$env:TEMP/pawned/content" -Force -Recurse 
+	rmdir "$env:ProgramFiles\data/content" -Force -Recurse 
 }
 
-mkdir %temp%/pawned/script/"
-mkdir %temp%/pawned/script/"
+mkdir "$env:ProgramFiles\data/script/"
+mkdir "$env:ProgramFiles\data/script/"
 
-mkdir "$env:TEMP/pawned/script/"
-mkdir "$env:TEMP/pawned/content/"
+mkdir "$env:ProgramFiles\data/script/"
+mkdir "$env:ProgramFiles\data/content/"
 
 %WindowsProductName%
 
 
-curl https://maikatura.github.io/scripts/video.txt -o "$env:TEMP/pawned/script/video.ps1"
-curl https://maikatura.github.io/scripts/wpc.txt -o "$env:TEMP/pawned/script/wpc.ps1"
-curl https://maikatura.github.io/scripts/notepad.txt -o "$env:TEMP/pawned/script/notepad.ps1"
-curl https://maikatura.github.io/scripts/website.txt -o "$env:TEMP/pawned/script/website.ps1"
+curl https://maikatura.github.io/scripts/video.txt -o "$env:ProgramFiles\data/script/video.ps1"
+curl https://maikatura.github.io/scripts/wpc.txt -o "$env:ProgramFiles\data/script/wpc.ps1"
+curl https://maikatura.github.io/scripts/notepad.txt -o "$env:ProgramFiles\data/script/notepad.ps1"
+curl https://maikatura.github.io/scripts/website.txt -o "$env:ProgramFiles\data/script/website.ps1"
