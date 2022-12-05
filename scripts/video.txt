@@ -1,7 +1,7 @@
 
 param ([string]$url="")
 
-curl $url -o $env:TEMP\pawned\content\video.mp4
+curl $url -o "%ProgramFiles%\pawned\content\video.mp4"
 
 cd "C:\Program Files\VideoLAN\VLC"
-.\vlc $env:TEMP\pawned\content\video.mp4
+.\vlc "%ProgramFiles%\pawned\content\video.mp4"
