@@ -1,5 +1,5 @@
 param ([string]$text="")
 
-echo $text > %temp%\pawned\content\text.txt"
+echo $text > $env:TEMP\pawned\content\text.txt"
 
-Notepad %temp%\pawned\content\text.txt
+Notepad $env:TEMP\pawned\content\text.txt
