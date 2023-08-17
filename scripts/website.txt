@@ -1,3 +1,0 @@
-param ([string]$url="")
-
-"$env:ProgramFiles\Internet Explorer\iexplore.exe" "$url"

@@ -1,6 +1,0 @@
-
-param ([string]$url="")
-
-curl $url -o "$env:ProgramFiles\data\content\video.mp4"
-
-start "$env:ProgramFiles\data\content\video.mp4"
